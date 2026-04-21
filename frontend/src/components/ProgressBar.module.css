@@ -1,0 +1,26 @@
+.wrapper {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.95rem;
+  color: #28524a;
+}
+
+.track {
+  height: 12px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(74, 140, 112, 0.18);
+}
+
+.value {
+  height: 100%;
+  border-radius: inherit;
+  background: linear-gradient(90deg, #1f8f66 0%, #d48834 100%);
+  transition: width 0.3s ease;
+}

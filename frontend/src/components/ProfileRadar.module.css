@@ -1,0 +1,52 @@
+.wrapper {
+  display: grid;
+  gap: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  color: #17322b;
+}
+
+.labelBlock {
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+}
+
+.dot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+}
+
+.adDot {
+  background: #1f8f66;
+}
+
+.ziDot {
+  background: #d48834;
+}
+
+.bar {
+  height: 14px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(23, 50, 43, 0.08);
+}
+
+.fill {
+  height: 100%;
+  border-radius: inherit;
+}
+
+.adFill {
+  background: linear-gradient(90deg, #2f7f69 0%, #1f8f66 100%);
+}
+
+.ziFill {
+  background: linear-gradient(90deg, #c56a1a 0%, #d48834 100%);
+}

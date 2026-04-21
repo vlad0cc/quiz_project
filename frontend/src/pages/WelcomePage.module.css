@@ -1,0 +1,115 @@
+.page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+
+.hero {
+  width: min(980px, 100%);
+  display: grid;
+  gap: 1.5rem;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: 36px;
+  background:
+    radial-gradient(circle at top right, rgba(212, 136, 52, 0.22), transparent 32%),
+    radial-gradient(circle at left center, rgba(31, 143, 102, 0.18), transparent 30%),
+    rgba(255, 252, 245, 0.94);
+  box-shadow: 0 28px 70px rgba(44, 63, 56, 0.14);
+}
+
+.kicker {
+  width: fit-content;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(23, 50, 43, 0.08);
+  color: #28524a;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 0;
+  max-width: 12ch;
+  color: #17322b;
+  font-size: clamp(2.2rem, 7vw, 4.8rem);
+  line-height: 0.98;
+}
+
+.description {
+  margin: 0;
+  max-width: 720px;
+  color: #34594f;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metrics div {
+  display: grid;
+  gap: 0.4rem;
+  padding: 1rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.72);
+}
+
+.metrics strong {
+  color: #17322b;
+  font-size: 1.15rem;
+}
+
+.metrics span {
+  color: #4e6c63;
+  font-size: 0.95rem;
+}
+
+.button {
+  width: fit-content;
+  padding: 1rem 1.4rem;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(120deg, #17322b 0%, #1f8f66 100%);
+  color: #fef9f0;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(23, 50, 43, 0.2);
+}
+
+.button:disabled {
+  opacity: 0.75;
+  cursor: wait;
+}
+
+.error {
+  margin: 0;
+  color: #a62f2f;
+}
+
+@media (max-width: 760px) {
+  .metrics {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .hero {
+    border-radius: 28px;
+  }
+}
