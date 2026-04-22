@@ -1,8 +1,0 @@
-./answer.go
-./middleware.go
-./question.go
-./response.go
-./result.go
-./router.go
-./session.go
-./spa.go
